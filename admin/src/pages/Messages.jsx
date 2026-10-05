@@ -1,6 +1,6 @@
 // import { useEffect, useState, useCallback } from "react";
 
-// const API_URL = "http://localhost:5000/api";
+// const API_URL = import.meta.env.VITE_API_URL;
 
 // function Messages() {
 //   const [messages, setMessages] = useState([]);
@@ -217,7 +217,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = import.meta.env.VITE_API_URL;
 
 function extractMessages(data) {
   if (Array.isArray(data)) return data;
